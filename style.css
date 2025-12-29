@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px !important;
+}
+
+/* Header Styling */
+.main-header {
+    background-color: white;
+}
+
+.search-container .form-select {
+    background-color: #f7f8f9;
+}
+
+/* Icons Fix: Gap between Icon and Text */
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8B96A5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon-item i {
+    font-size: 20px;
+    margin-bottom: 2px; /* Tight gap */
+}
+
+.icon-item small {
+    font-size: 12px;
+    color: #8B96A5;
+}
+
+.icon-item:hover {
+    color: #0D6EFD;
+}
+
+.icon-item:hover small {
+    color: #0D6EFD;
+}
+
+/* Nav Settings Fix: Dropdowns proximity */
+.nav-settings .dropdown-toggle::after {
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.nav-links li {
+    font-size: 15px;
+    color: #1C1C1C;
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    color: #0D6EFD;
+}
+
+/* Footer Styling */
+.newsletter-section {
+    background: #EFF2F4;
+}
+
+.footer-main ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-main ul li:hover {
+    color: #0D6EFD;
+}
+
+.social-icons i {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.social-icons i:hover {
+    color: #0D6EFD !important;
+}
+
+/* Sidebar list item colors */
+.list-group-item.active {
+    background-color: #E5F1FF !important;
+    color: #1C1C1C !important;
+    font-weight: 500;
+}
+
+.list-group-item {
+    font-size: 14px;
+    color: #505050;
+    border: none;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    color: #0D6EFD;
+}
+
+/* Banner text styling updated */
+.banner-box h2 {
+    color: #1C1C1C;
+    max-width: 450px; /* Isay barha diya taake text sath aye */
+    white-space: nowrap; /* Is se text ek hi line mein rahay ga */
+}

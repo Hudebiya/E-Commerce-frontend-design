@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="main-header border-bottom py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <img src="assets/Layout/Brand/logo-colored.png" alt="Brand Logo" style="height: 40px;">
+                </div>
+                <div class="search-container d-flex border rounded" style="border: 2px solid #0D6EFD !important;">
+                    <input type="text" class="form-control border-0 shadow-none" placeholder="Search">
+
+                    <select class="form-select border-0 border-start shadow-none"
+                        style="width: 160px; border-radius: 0; cursor: pointer;">
+                        <option selected>All category</option>
+                        <option>Electronics</option>
+                        <option>Clothes</option>
+                        <option>Accessories</option>
+                    </select>
+
+                    <button class="btn btn-primary border-0" style="border-radius: 0;">Search</button>
+                </div>
+                <div class="header-icons d-flex gap-3 text-center text-secondary">
+                    <div class="icon-item d-flex flex-column align-items-center">
+                        <i class="fa-solid fa-user"></i>
+                        <small class="mt-n1">Profile</small>
+                    </div>
+                    <div class="icon-item d-flex flex-column align-items-center">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <small>Message</small>
+                    </div>
+                    <div class="icon-item d-flex flex-column align-items-center">
+                        <i class="fa-solid fa-heart"></i>
+                        <small>Orders</small>
+                    </div>
+                    <div class="icon-item d-flex flex-column align-items-center">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <small>My cart</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-bar border-bottom py-2">
+            <div class="container d-flex justify-content-between align-items-center">
+                <ul class="nav-links d-flex list-unstyled m-0 gap-4 align-items-center">
+                    <li class="fw-bold"><i class="fa-solid fa-bars me-2"></i> All category</li>
+                    <li>Hot offers</li>
+                    <li>Gift boxes</li>
+                    <li>Projects</li>
+                    <li>Menu item</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle p-0" href="#" data-bs-toggle="dropdown">Help</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-settings d-flex align-items-center" style="gap: 15px;"></div>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center fw-medium" href="#" role="button"
+                        data-bs-toggle="dropdown" style="font-size: 14px; color: #1C1C1C;">
+                        English,USD
+                    </a>
+                    <ul class="dropdown-menu shadow-sm">
+                        <li><a class="dropdown-item" href="#">USD ($)</a></li>
+                        <li><a class="dropdown-item" href="#">EUR (€)</a></li>
+                        <li><a class="dropdown-item" href="#">GBP (£)</a></li>
+                        <li><a class="dropdown-item" href="#">AED (د.إ)</a></li>
+                        <li><a class="dropdown-item" href="#">PKR (Rs)</a></li>
+                        <li><a class="dropdown-item" href="#">CNY (¥)</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
+                        data-bs-toggle="dropdown">
+                        Ship to <img src="assets/Layout1/Image/flags/DE@2x.png" width="20" alt="flag">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/AE@2x.png" width="20"
+                                    class="me-2">United Arab Emirates (UAE)</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/CN@2x.png" width="20"
+                                    class="me-2">China</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/DK@2x.png" width="20"
+                                    class="me-2">France</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/FR@2x.png" width="20"
+                                    class="me-2">France</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/GB@2x.png" width="20"
+                                    class="me-2">United Kingdom</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/icon.png" width="20"
+                                    class="me-2">Australia</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/IT@2x.png" width="20"
+                                    class="me-2">Italy</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/RU@2x.png" width="20"
+                                    class="me-2">Russia</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/US@2x.png" width="20"
+                                    class="me-2">USA</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-4 bg-light">
+        <div class="container">
+            <div class="row g-3">
+
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="list-group border-0 shadow-sm rounded h-100"> <a href="#"
+                            class="list-group-item list-group-item-action active border-0 py-3 px-4">Automobiles</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 py-3 px-4">Clothes and
+                            wear</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 py-3 px-4">Home interiors</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 py-3 px-4">Computer and
+                            tech</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 py-3 px-4">Tools,
+                            equipments</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 py-3 px-4">Sports and
+                            outdoor</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 py-3 px-4">Animal and
+                            pets</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 py-3 px-4">Machinery
+                            tools</a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 py-3 px-4">More category</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="banner-box rounded h-100 shadow-sm position-relative overflow-hidden"
+                        style="background-color: #E3F2FD; min-height: 380px;">
+
+                        <div class="p-5" style="position: relative; z-index: 2;">
+                            <h5 class="mb-1 text-dark" style="font-weight: 400; font-size: 1.2rem;">Latest trending</h5>
+                            <h2 class="fw-bold mb-4" style="font-size: 2.8rem; line-height: 1.2;">
+                                Electronic items
+                            </h2>
+                            <button class="btn btn-white bg-white border-0 shadow-sm px-4 py-2 fw-bold"
+                                style="border-radius: 6px;">
+                                Learn more
+                            </button>
+                        </div>
+
+                        <img src="assets/Image/backgrounds/user-avatar.png" alt="Banner"
+                            style="position: absolute; right: 0; bottom: 0; height: 95%; width: auto; z-index: 1; object-fit: contain;border: none; outline: none;"
+                            onerror="this.style.display='none'">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex flex-column gap-3 h-100">
+                        <div class="card border-0 shadow-sm p-3" style="background-color: #E3F2FD;">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="assets/Image/backgrounds/user-avatar.png" width="45" height="45"
+                                    class="rounded-circle" style="object-fit: cover; border: 2px solid white;">
+                                <p class="mb-0 small leading-tight text-dark">Hi, user<br>let's get started</p>
+                            </div>
+                            <button class="btn btn-primary btn-sm w-100 mb-2 border-0"
+                                style="background-color: #0D6EFD;">Join now</button>
+                            <button class="btn btn-white btn-sm w-100 border-0 bg-white text-primary shadow-sm">Log
+                                in</button>
+                        </div>
+
+                        <div class="p-4 rounded text-white shadow-sm mb-3"
+                            style="background-color: #F38332; min-height: 100px; d-flex align-items:center;">
+                            <p class="mb-0" style="font-size: 20px; font-weight: 500; line-height: 1.5;">
+                                Get US $10 off <br> with a new <br>supplier
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded text-white shadow-sm"
+                            style="background-color: #55BDB3; min-height: 100px; d-flex align-items-center;">
+                            <p class="mb-0" style="font-size: 20px; font-weight: 500; line-height: 1.5;">
+                                Send quotes with <br> supplier <br> preferences
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="newsletter-section text-center py-5 bg-light">
+            <h3>Subscribe on our newsletter</h3>
+            <p class="text-muted">Get daily news on upcoming offers from many suppliers all over the world</p>
+            <div class="d-flex justify-content-center gap-2 mt-3">
+                <input type="email" class="form-control" style="max-width: 300px;" placeholder="Email">
+                <button class="btn btn-primary">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footer-main py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="assets/Layout/Brand/logo-colored.png" alt="Brand Logo" class="mb-3"
+                            style="width: 150px;">
+                        <p class="text-muted small">Best information about the company gies here but now lorem ipsum is
+                        </p>
+                        <div class="social-icons d-flex gap-2 h4">
+                            <i class="fa-brands fa-facebook text-secondary"></i>
+                            <i class="fa-brands fa-twitter text-secondary"></i>
+                            <i class="fa-brands fa-linkedin text-secondary"></i>
+                            <i class="fa-brands fa-instagram text-secondary"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="fw-bold">About</h6>
+                        <ul class="list-unstyled text-muted small mt-3">
+                            <li>About Us</li>
+                            <li>Find store</li>
+                            <li>Categories</li>
+                            <li>Blogs</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="fw-bold">Partnership</h6>
+                        <ul class="list-unstyled text-muted small mt-3">
+                            <li>About Us</li>
+                            <li>Find store</li>
+                            <li>Categories</li>
+                            <li>Blogs</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="fw-bold">Information</h6>
+                        <ul class="list-unstyled text-muted small mt-3">
+                            <li>Help Center</li>
+                            <li>Money Refund</li>
+                            <li>Shipping</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="fw-bold">Get app</h6>
+                        <div class="mt-3">
+                            <img src="assets/Layout/Misc/Group.png" class="mb-2"
+                                style="width: 120px; cursor: pointer;"><br>
+                            <img src="assets/Layout/Misc/market-button.png" style="width: 120px; cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom py-3 bg-light border-top">
+            <div class="container d-flex justify-content-between align-items-center">
+                <p class="m-0 text-muted small">© 2023 Ecommerce.</p>
+
+                <div class="dropdown">
+                    <button class="btn btn-sm dropdown-toggle d-flex align-items-center gap-2 border" type="button"
+                        data-bs-toggle="dropdown">
+                        <img src="assets/Layout1/Image/flags/US@2x.png" width="20" alt="English">
+                        <span>English</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/AE@2x.png" width="20"
+                                    class="me-2">United Arab Emirates (UAE)</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/CN@2x.png" width="20"
+                                    class="me-2">China</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/DE@2x.png" width="20"
+                                    class="me-2">Germany</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/DK@2x.png" width="20"
+                                    class="me-2">Denmark</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/FR@2x.png" width="20"
+                                    class="me-2">France</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/GB@2x.png" width="20"
+                                    class="me-2">United Kingdom</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/icon.png" width="20"
+                                    class="me-2">Australia</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/IT@2x.png" width="20"
+                                    class="me-2">Italy</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/RU@2x.png" width="20"
+                                    class="me-2">Russia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
