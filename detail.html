@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
         <div class="main-header border-bottom py-3">
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="logo">
-                    <img src="assets/Layout/Brand/logo-colored.png" alt="Brand Logo" style="height: 40px;">
-                </div>
+                 <a href="index.html"><img src="assets/Layout/Brand/logo-colored.png" alt="Brand Logo" style="height: 40px;"></a>
+            </div>
                 <div class="search-container d-flex border rounded" style="border: 2px solid #0D6EFD !important;">
                     <input type="text" class="form-control border-0 shadow-none" placeholder="Search">
 
@@ -45,8 +43,9 @@
                         <small>Orders</small>
                     </div>
                     <div class="icon-item d-flex flex-column align-items-center">
+                        <a href="cart.html" class="text-decoration-none text-secondary d-flex flex-column align-items-center">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <small>My cart</small>
+                        <small>My cart</small></a>
                     </div>
                 </div>
             </div>
@@ -112,6 +111,61 @@
         </div>
         </nav>
     </header>
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+            <li class="breadcrumb-item"><a href="shop.html" class="text-decoration-none text-muted">Clothes</a></li>
+            <li class="breadcrumb-item active">Mens wear</li>
+        </ol>
+    </nav>
+    <div class="card border-0 shadow-sm p-4">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="border rounded p-3 text-center mb-3">
+                    <img src="assets/Layout/alibaba/Image/cloth/Bitmap.png" class="img-fluid" id="mainImage">
+                </div>
+                <div class="d-flex gap-2 justify-content-center">
+                    <img src="shirt1.png" class="border rounded p-1" style="width: 50px; cursor:pointer;">
+                    <img src="shirt2.png" class="border rounded p-1" style="width: 50px; cursor:pointer;">
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <span class="text-success small"><i class="fa fa-check"></i> In stock</span>
+                <h4 class="fw-bold">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h4>
+                
+                <div class="text-warning mb-2">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <span class="text-muted ms-2 small">32 reviews · 154 sold</span>
+                </div>
+
+                <div class="bg-light p-3 d-flex gap-4 align-items-center mb-3">
+                    <div>
+                        <h5 class="text-danger fw-bold mb-0">$98.00</h5>
+                        <small class="text-muted">50-100 pcs</small>
+                    </div>
+                    <div class="border-start ps-4">
+                        <h5 class="fw-bold mb-0">$90.00</h5>
+                        <small class="text-muted">100-700 pcs</small>
+                    </div>
+                </div>
+
+                <table class="table table-borderless small">
+                    <tr><td class="text-muted" width="100">Price:</td><td>Negotiable</td></tr>
+                    <tr><td class="text-muted">Type:</td><td>Classic shoes</td></tr>
+                    <tr><td class="text-muted">Material:</td><td>Plastic material</td></tr>
+                </table>
+                <hr>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-primary px-4">Send inquiry</button>
+                    <button class="btn btn-outline-primary"><i class="fa fa-heart"></i> Save for later</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <footer>
         <div class="newsletter-section text-center py-5 bg-light">
@@ -213,6 +267,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@
     max-width: 1200px !important;
 }
 
-/* Header Styling */
+
 .main-header {
     background-color: white;
 }
@@ -20,7 +20,7 @@
     background-color: #f7f8f9;
 }
 
-/* Icons Fix: Gap between Icon and Text */
+
 .icon-item {
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
 
 .icon-item i {
     font-size: 20px;
-    margin-bottom: 2px; /* Tight gap */
+    margin-bottom: 2px; 
 }
 
 .icon-item small {
@@ -48,7 +48,7 @@
     color: #0D6EFD;
 }
 
-/* Nav Settings Fix: Dropdowns proximity */
+
 .nav-settings .dropdown-toggle::after {
     margin-left: 4px;
     vertical-align: middle;
@@ -64,7 +64,6 @@
     color: #0D6EFD;
 }
 
-/* Footer Styling */
 .newsletter-section {
     background: #EFF2F4;
 }
@@ -87,7 +86,6 @@
     color: #0D6EFD !important;
 }
 
-/* Sidebar list item colors */
 .list-group-item.active {
     background-color: #E5F1FF !important;
     color: #1C1C1C !important;
@@ -105,9 +103,9 @@
     color: #0D6EFD;
 }
 
-/* Banner text styling updated */
 .banner-box h2 {
     color: #1C1C1C;
-    max-width: 450px; /* Isay barha diya taake text sath aye */
-    white-space: nowrap; /* Is se text ek hi line mein rahay ga */
+    max-width: 450px; 
+    white-space: nowrap; 
 }
+
