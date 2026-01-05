@@ -113,59 +113,170 @@
     </header>
 
 <div class="container mt-4">
-    <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb" class="mb-4">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
-            <li class="breadcrumb-item"><a href="shop.html" class="text-decoration-none text-muted">Mobile accessory</a></li>
-            <li class="breadcrumb-item active">Mens wear</li>
+            <li class="breadcrumb-item"><a href="shop.html" class="text-decoration-none text-muted">Mobiles</a></li>
+            <li class="breadcrumb-item active text-dark fw-bold">Samsung Galaxy S23 Ultra</li>
         </ol>
     </nav>
-    <div class="card border-0 shadow-sm p-4">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="border rounded p-3 text-center mb-3">
-                    <img src="assets/Layout/alibaba/Image/cloth/Bitmap.png" class="img-fluid" id="mainImage">
+
+    <div class="row g-4">
+        <div class="col-md-5">
+            <div class="card border shadow-sm p-3 bg-white mb-3" style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+                <img src="assets/Image/tech/image 33.png" 
+                    id="mainProductImg" 
+                    class="img-fluid" 
+                    style="width: auto; max-width: 80%; height: 350px; object-fit: contain; image-rendering: auto;">
+            </div>
+            
+            <div class="d-flex gap-2 justify-content-center">
+                <div class="thumb-box border rounded p-1" style="width: 70px; height: 70px; cursor: pointer;">
+                    <img src="assets/Image/tech/image 33.png" class="img-fluid w-100 h-100" style="object-fit: cover;" onclick="changeImage(this.src)">
                 </div>
-                <div class="d-flex gap-2 justify-content-center">
-                    <img src="shirt1.png" class="border rounded p-1" style="width: 50px; cursor:pointer;">
-                    <img src="shirt2.png" class="border rounded p-1" style="width: 50px; cursor:pointer;">
+                <div class="thumb-box border rounded p-1" style="width: 70px; height: 70px; cursor: pointer;">
+                    <img src="assets/Image/tech/image 33.png" class="img-fluid w-100 h-100" style="object-fit: cover;" onclick="changeImage(this.src)">
+                </div>
+                <div class="thumb-box border rounded p-1" style="width: 70px; height: 70px; cursor: pointer;">
+                    <img src="assets/Image/tech/image 33.png" class="img-fluid w-100 h-100" style="object-fit: cover;" onclick="changeImage(this.src)">
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-7">
-                <span class="text-success small"><i class="fa fa-check"></i> In stock</span>
-                <h4 class="fw-bold">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h4>
+        <div class="col-md-7">
+            <div class="ps-md-3">
+                <span class="badge bg-success-subtle text-success mb-2">In Stock</span>
+                <h3 class="fw-bold text-dark">Samsung Galaxy S23 Ultra 5G (Phantom Black, 256 GB)</h3>
                 
-                <div class="text-warning mb-2">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                    <span class="text-muted ms-2 small">32 reviews · 154 sold</span>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="text-warning me-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-muted small">(154 Reviews)</span>
+                    <span class="mx-2 text-muted">|</span>
+                    <span class="text-primary small fw-medium">500+ Sold</span>
                 </div>
 
-                <div class="bg-light p-3 d-flex gap-4 align-items-center mb-3">
-                    <div>
-                        <h5 class="text-danger fw-bold mb-0">$98.00</h5>
-                        <small class="text-muted">50-100 pcs</small>
+                <div class="bg-light p-3 rounded mb-4 d-flex align-items-center">
+                    <div class="me-5">
+                        <h2 class="text-primary fw-bold mb-0">$999.00</h2>
+                        <small class="text-muted text-decoration-line-through">$1,199.00</small>
                     </div>
                     <div class="border-start ps-4">
-                        <h5 class="fw-bold mb-0">$90.00</h5>
-                        <small class="text-muted">100-700 pcs</small>
+                        <p class="mb-0 text-danger fw-bold">Save 20%</p>
+                        <small class="text-muted">Inclusive of all taxes</small>
                     </div>
                 </div>
 
-                <table class="table table-borderless small">
-                    <tr><td class="text-muted" width="100">Price:</td><td>Negotiable</td></tr>
-                    <tr><td class="text-muted">Type:</td><td>Classic shoes</td></tr>
-                    <tr><td class="text-muted">Material:</td><td>Plastic material</td></tr>
-                </table>
+                <div class="mb-4">
+                    <table class="table table-sm table-borderless">
+                        <tr><td class="text-muted w-25">Brand</td><td class="fw-medium">Samsung</td></tr>
+                        <tr><td class="text-muted w-25">Model</td><td class="fw-medium">Galaxy S23 Ultra</td></tr>
+                        <tr><td class="text-muted w-25">Color</td><td class="fw-medium">Phantom Black</td></tr>
+                        <tr><td class="text-muted w-25">Storage</td><td class="fw-medium">256 GB / 512 GB</td></tr>
+                    </table>
+                </div>
+
                 <hr>
-                <div class="d-flex gap-2">
-                    <button class="btn btn-primary px-4">Send inquiry</button>
-                    <button class="btn btn-outline-primary"><i class="fa fa-heart"></i> Save for later</button>
+
+                <div class="d-flex gap-3">
+                    <button class="btn btn-primary btn-lg px-5 shadow-sm">
+                        <i class="fas fa-cart-plus me-2"></i> Add to Cart
+                    </button>
+                    <button class="btn btn-outline-secondary btn-lg px-4">
+                        <i class="far fa-heart"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="row mt-5">
+    <div class="col-md-9">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-white border-bottom">
+                <ul class="nav nav-tabs card-header-tabs" id="productTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" id="desc-tab" data-bs-toggle="tab" href="#desc">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" id="spec-tab" data-bs-toggle="tab" href="#spec">Specifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" id="review-tab" data-bs-toggle="tab" href="#review">Reviews (32)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body p-4">
+                <div class="tab-content" id="productTabContent">
+                    <div class="tab-pane fade show active" id="desc">
+                        <h6>Product Overview</h6>
+                        <p class="text-muted">Yeh mobile apne behtareen camera aur fast processor ke liye jana jata hai. Isme 5000mAh ki battery hai jo pura din chalti hai.</p>
+                        <ul class="text-muted small">
+                            <li>High Resolution Display</li>
+                            <li>Fast Charging Support</li>
+                            <li>Water Resistant (IP68)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="related-products mt-5 mb-5">
+    <h4 class="fw-bold mb-4">Related Products</h4>
+    <div class="row row-cols-1 row-cols-md-4 g-3">
+        
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-2 text-center">
+                <img src="assets/Image/tech/image 23.png" class="card-img-top p-3" style="height: 150px; object-fit: contain;">
+                <div class="card-body">
+                    <p class="mb-1 small text-muted text-truncate">iPhone 13 Pro</p>
+                    <h6 class="card-title fw-bold mb-0">$799.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-2 text-center">
+                <img src="assets/Image/tech/image 32.png" class="card-img-top p-3" style="height: 150px; object-fit: contain;">
+                <div class="card-body">
+                    <p class="mb-1 small text-muted text-truncate">Samsung S22</p>
+                    <h6 class="card-title fw-bold mb-0">$699.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-2 text-center">
+                <img src="assets/Image/tech/image 34.png" class="card-img-top p-3" style="height: 150px; object-fit: contain;">
+                <div class="card-body">
+                    <p class="mb-1 small text-muted text-truncate">Google Pixel 7</p>
+                    <h6 class="card-title fw-bold mb-0">$599.00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm p-2 text-center">
+                <img src="assets/Image/tech/8.png" class="card-img-top p-3" style="height: 150px; object-fit: contain;">
+                <div class="card-body">
+                    <p class="mb-1 small text-muted text-truncate">OnePlus 11</p>
+                    <h6 class="card-title fw-bold mb-0">$649.00</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
 
     <footer>
         <div class="newsletter-section text-center py-5 bg-light">
