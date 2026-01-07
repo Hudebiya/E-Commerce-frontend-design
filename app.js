@@ -91,3 +91,57 @@ const calculateTotal = (cart) => {
     if(document.getElementById('subtotal')) document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`;
     if(document.getElementById('total-price')) document.getElementById('total-price').innerText = `$${total.toFixed(2)}`;
 };
+
+const checkoutForm = document.getElementById('checkout-form');
+if (checkoutForm) {
+    checkoutForm.addEventListener('submit', (e) => {
+        e.preventDefault(); 
+        
+        alert("Thank you! Your order has been placed successfully.");
+        
+        localStorage.removeItem('myCart');
+        
+        window.location.href = "index.html";
+    });
+}
+
+const displayCheckoutSummary = () => {
+    const summaryContainer = document.getElementById('checkout-items-summary');
+    const totalContainer = document.getElementById('final-total');
+    if (!summaryContainer) return;
+
+    let cart = JSON.parse(localStorage.getItem('myCart')) || [];
+    let subtotal = 0;
+
+    summaryContainer.innerHTML = cart.map(item => {
+        subtotal += item.price * item.qty;
+        return `<div class="d-flex justify-content-between mb-2">
+                    <span class="small">${item.name} (x${item.qty})</span>
+                    <span class="small fw-bold">$${(item.price * item.qty).toFixed(2)}</span>
+                </div>`;
+    }).join('');
+
+    if(totalContainer) totalContainer.innerText = `$${subtotal.toFixed(2)}`;
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    displayCheckoutSummary();
+});
+
+const clearBtn = document.getElementById('clear-cart');
+if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+        if (confirm("Are you sure you want to remove all items from your cart?")) {
+            localStorage.removeItem('myCart'); 
+            
+            if (typeof displayCart === "function") {
+                displayCart(); 
+            } else {
+                location.reload(); 
+            }
+            
+            alert("Cart has been cleared.");
+        }
+    });
+}
+

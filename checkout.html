@@ -113,122 +113,65 @@
         </nav>
     </header>
 
-     <div class="container mt-4">
-    <h4 class="fw-bold mb-4">My cart (3)</h4>
-
+<div class="container mt-5 mb-5">
     <div class="row">
-        <div class="col-md-9">
-            <div class="card p-3 shadow-sm border-0 mb-3">
-                <div class="row align-items-center mb-4 border-bottom pb-3">
-                    <div class="col-md-2">
-                        <img src="assets/Layout/alibaba/Image/cloth/Bitmap.png" class="img-fluid border rounded p-2">
-                    </div>
-                    <div class="col-md-6">
-                        <h6 class="fw-bold mb-1">T-shirts with multiple colors, for men</h6>
-                        <p class="text-muted small mb-0">Size: medium, Color: blue, Material: Plastic</p>
-                        <p class="text-muted small mb-2">Seller: Love world</p>
-                        <div class="d-flex gap-2">
-                            <button class="btn btn-sm btn-outline-danger border">Remove</button>
-                            <button class="btn btn-sm btn-outline-primary border">Save for later</button>
+        <div class="col-md-8">
+            <div class="card p-4 shadow-sm border-0">
+                <h4 class="fw-bold mb-4">Shipping Details</h4>
+                <form id="checkout-form">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label">Address</label>
+                            <input type="text" class="form-control" placeholder="House#, Street, Area" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="+92..." required>
                         </div>
                     </div>
-                    <div class="col-md-2 text-end">
-                        <h6 class="fw-bold">$78.99</h6>
-                        <select class="form-select form-select-sm d-inline-block w-auto">
-                            <option>Qty: 1</option>
-                            <option>Qty: 2</option>
-                        </select>
+
+                    <h4 class="fw-bold mt-5 mb-4">Payment Method</h4>
+                    <div class="border rounded p-3 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="cod" checked>
+                            <label class="form-check-label fw-bold" for="cod">Cash on Delivery (COD)</label>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-9">
-    <div class="card p-3 shadow-sm border-0 mb-3">
-        <div id="cart-items">
-            </div>
-
-        <div class="d-flex justify-content-between mt-3">
-            <a href="shop.html" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Back to shop</a>
-            <button id="clear-cart" class="btn btn-outline-primary">Remove all</button>
-        </div>
-    </div>
-    </div>
-            </div>
-
-            <div class="d-flex gap-4 mt-4">
-                <div class="d-flex align-items-center gap-2">
-                    <i class="fa fa-lock text-muted h4"></i>
-                    <small class="text-muted">Secure Payment</small>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                    <i class="fa fa-comment text-muted h4"></i>
-                    <small class="text-muted">Customer Support</small>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                    <i class="fa fa-truck text-muted h4"></i>
-                    <small class="text-muted">Free Delivery</small>
-                </div>
+                    <div class="border rounded p-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="payment" id="card">
+                            <label class="form-check-label fw-bold" for="card">Credit / Debit Card</label>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
 
-        <div class="col-md-3">
-            <div class="card p-3 shadow-sm border-0 mb-3">
-                <p class="text-muted mb-2">Have a coupon?</p>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Add coupon">
-                    <button class="btn btn-outline-primary">Apply</button>
-                </div>
-            </div>
-
-            <div class="card p-3 shadow-sm border-0">
-                <div class="d-flex justify-content-between mb-2">
-                    <span>Subtotal:</span>
-                    <span class="text-muted">$1403.97</span>
-                </div>
-                <div class="d-flex justify-content-between mb-2">
-                    <span>Discount:</span>
-                    <span class="text-danger">- $60.00</span>
-                </div>
-                <div class="d-flex justify-content-between mb-3">
-                    <span>Tax:</span>
-                    <span class="text-success">+ $14.00</span>
-                </div>
+        <div class="col-md-4">
+            <div class="card p-4 shadow-sm border-0 bg-light text-dark">
+                <h5 class="fw-bold mb-3">Order Review</h5>
+                <div id="checkout-items-summary">
+                    </div>
                 <hr>
-                <div class="d-flex justify-content-between mb-4">
-                    <h5 class="fw-bold">Total:</h5>
-                    <h5 class="fw-bold">$1357.97</h5>
+                <div class="d-flex justify-content-between h5 fw-bold">
+                    <span>Total Amount:</span>
+                    <span id="final-total">$0.00</span>
                 </div>
-                <a href="checkout.html" class="btn btn-success w-100 fw-bold py-2 shadow-sm" style="background-color: #00B517; border: none; text-decoration: none; display: inline-block; text-align: center;">
-                     Checkout</a>
-                <div class="text-center mt-3">
-                    <img src="assets/Layout1/Image/payment/visa.png" width="30" class="me-1">
-                    <img src="assets/Layout1/Image/payment/mastercard.png" width="30" class="me-1">
-                    <img src="assets/Layout1/Image/payment/payoneer.png" width="30" class="me-1">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container mb-5">
-    <div class="card p-4 shadow-sm border-0">
-        <h5 class="fw-bold mb-4">Saved for later</h5>
-        <div class="row g-3">
-            <div class="col-md-3 col-6">
-                <div class="border rounded p-3 h-100">
-                    <img src="assets/Layout/alibaba/Image/cloth/image 30.png" class="img-fluid mb-2" style="height: 120px; object-fit: contain; width: 100%;">
-                    <h6 class="fw-bold mb-1">$29.50</h6>
-                    <p class="text-muted small mb-2 text-truncate">Smartwatch Series 7 White</p>
-                    <button class="btn btn-sm btn-outline-primary w-100"><i class="fa fa-shopping-cart"></i> Move to cart</button>
-                </div>
-            </div>
-            
-            <div class="col-md-3 col-6">
-                <div class="border rounded p-3 h-100">
-                    <img src="assets/Layout/alibaba/Image/cloth/2 1.png" class="img-fluid mb-2" style="height: 120px; object-fit: contain; width: 100%;">
-                    <h6 class="fw-bold mb-1">$55.00</h6>
-                    <p class="text-muted small mb-2 text-truncate">Noise Cancelling Headphones</p>
-                    <button class="btn btn-sm btn-outline-primary w-100"><i class="fa fa-shopping-cart"></i> Move to cart</button>
-                </div>
+                <button type="submit" form="checkout-form" class="btn btn-success btn-lg w-100 mt-4 shadow-sm" style="background-color: #00B517;">
+                    Place Order Now
+                </button>
             </div>
         </div>
     </div>
