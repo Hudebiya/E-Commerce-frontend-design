@@ -112,14 +112,17 @@
         </nav>
     </header>
 
-<div class="container mt-4">
-    <nav aria-label="breadcrumb" class="mb-4">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
-            <li class="breadcrumb-item"><a href="shop.html" class="text-decoration-none text-muted">Mobiles</a></li>
-            <li class="breadcrumb-item active text-dark fw-bold">Samsung Galaxy S23 Ultra</li>
-        </ol>
-    </nav>
+<div class="bg-light py-2 mb-4 border-bottom">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                <li class="breadcrumb-item"><a href="shop.html" class="text-decoration-none text-muted">Mobiles</a></li>
+                <li class="breadcrumb-item active text-dark fw-bold" aria-current="page">Samsung Galaxy S23 Ultra</li>
+            </ol>
+        </nav>
+    </div>
+</div>
 
     <div class="row g-4">
         <div class="col-md-5">
@@ -223,6 +226,50 @@
                             <li>Water Resistant (IP68)</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="card shadow-sm border-0">
+        <div class="card-body p-0">
+            <ul class="nav nav-tabs border-bottom px-3 pt-3" id="productTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active fw-bold" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc" type="button" role="tab">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-bold" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab">Reviews (5)</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-bold" id="shipping-tab" data-bs-toggle="tab" data-bs-target="#shipping" type="button" role="tab">Shipping info</button>
+                </li>
+            </ul>
+
+            <div class="tab-content p-4" id="productTabContent">
+                <div class="tab-pane fade show active" id="desc" role="tabpanel">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id ante a diam tincidunt lacinia. In hac habitasse platea dictumst.</p>
+                    <ul class="text-muted">
+                        <li>High quality material</li>
+                        <li>Durable and long lasting</li>
+                        <li>Modern design</li>
+                    </ul>
+                </div>
+
+                <div class="tab-pane fade" id="review" role="tabpanel">
+                    <div class="d-flex align-items-start mb-3">
+                        <img src="https://via.placeholder.com/50" class="rounded-circle me-3">
+                        <div>
+                            <h6 class="mb-0 fw-bold">Sarah Ahmed</h6>
+                            <div class="text-warning small mb-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                            <p class="text-muted small">Amazing product! Highly recommended.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="shipping" role="tabpanel">
+                    <p class="text-muted"><i class="fa fa-truck me-2"></i> Free delivery within 3-5 business days.</p>
                 </div>
             </div>
         </div>
