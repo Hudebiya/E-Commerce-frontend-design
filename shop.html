@@ -13,85 +13,90 @@
 <body>
 
     <header>
-        <div class="main-header border-bottom py-3">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="logo">
-                    <a href="index.html">
-                    <img src="assets/Layout/Brand/logo-colored.png" alt="Brand Logo" style="height: 40px;"></a>
-                </div>
-                <div class="search-container d-flex border rounded overflow-hidden" style="border: 2px solid #0D6EFD !important;">
-                    <input type="text" class="form-control border-0 shadow-none" placeholder="Search">
+    <div class="main-header border-bottom py-3">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/Layout/Brand/logo-colored.png" alt="Brand Logo" style="height: 40px;">
+                </a>
+            </div>
+            
+            <div class="search-container d-flex border rounded overflow-hidden flex-grow-1 mx-lg-4" style="border: 2px solid #0D6EFD !important; max-width: 600px;">
+                <input type="text" class="form-control border-0 shadow-none" placeholder="Search">
+                <select class="form-select border-0 border-start shadow-none d-none d-md-block" style="width: 160px; border-radius: 0;">
+                    <option selected>All category</option>
+                    <option>Electronics</option>
+                    <option>Clothes</option>
+                    <option>Accessories</option>
+                </select>
+                <button class="btn btn-primary border-0" style="border-radius: 0;">Search</button>
+            </div>
 
-                    <select class="form-select border-0 border-start shadow-none"
-                        style="width: 160px; border-radius: 0; cursor: pointer;">
-                        <option selected>All category</option>
-                        <option>Electronics</option>
-                        <option>Clothes</option>
-                        <option>Accessories</option>
-                    </select>
-
-                    <button class="btn btn-primary border-0" style="border-radius: 0;">Search</button>
+            <div class="header-icons d-flex gap-3 text-center text-secondary">
+                <div class="icon-item d-flex flex-column align-items-center">
+                    <i class="fa-solid fa-user"></i>
+                    <small>Profile</small>
                 </div>
-                <div class="header-icons d-flex gap-3 text-center text-secondary">
-                    <div class="icon-item d-flex flex-column align-items-center">
-                        <i class="fa-solid fa-user"></i>
-                        <small class="mt-n1">Profile</small>
-                    </div>
-                    <div class="icon-item d-flex flex-column align-items-center">
+                <div class="icon-item d-flex flex-column align-items-center">
                         <i class="fa-solid fa-comment-dots"></i>
                         <small>Message</small>
                     </div>
-                    <div class="icon-item d-flex flex-column align-items-center">
-                        <i class="fa-solid fa-heart"></i>
-                        <small>Orders</small>
-                    </div>
-                    <div class="icon-item d-flex flex-column align-items-center">
-                        <a href="cart.html" class="text-secondary text-decoration-none d-flex flex-column align-items-center">
+                <div class="icon-item d-flex flex-column align-items-center">
+                    <i class="fa-solid fa-heart"></i>
+                    <small>Orders</small>
+                </div>
+                <div class="icon-item d-flex flex-column align-items-center">
+                    <a href="cart.html" class="text-secondary text-decoration-none d-flex flex-column align-items-center">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <small>My cart</small></a>
-                    </div>
+                        <small>My cart</small>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <nav class="nav-bar border-bottom py-2">
-            <div class="container d-flex justify-content-between align-items-center">
-                <ul class="nav-links d-flex list-unstyled m-0 gap-4 align-items-center">
-                    <li class="fw-bold">
-                        <a href="shop.html" class="text-decoration-none text-dark">
-            <i class="fa-solid fa-bars me-2"></i> All category</a></li>
-                    <li><a href="shop.html" class="text-decoration-none text-dark">Hot offers</a></li>
-                    <li>Gift boxes</li>
-                    <li>Projects</li>
-                    <li>Menu item</li>
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom py-2">
+        <div class="container">
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link text-dark" href="shop.html"><i class="fa-solid fa-bars me-2"></i> All category</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="shop.html">Hot offers</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Gift boxes</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Projects</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle p-0" href="#" data-bs-toggle="dropdown">Help</a>
-                        <ul class="dropdown-menu">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Help</a>
+                        <ul class="dropdown-menu border-0 shadow-sm">
                             <li><a class="dropdown-item" href="#">Contact Us</a></li>
                             <li><a class="dropdown-item" href="#">FAQ</a></li>
                         </ul>
                     </li>
                 </ul>
-                <div class="nav-settings d-flex align-items-center" style="gap: 15px;"></div>
-                <div class="dropdown">
-                    <a class="nav-link dropdown-toggle d-flex align-items-center fw-medium" href="#" role="button" data-bs-toggle="dropdown" style="font-size: 14px; color: #1C1C1C;">
-                        English,USD
-                    </a>
-                    <ul class="dropdown-menu shadow-sm">
-                        <li><a class="dropdown-item" href="#">USD ($)</a></li>
-                        <li><a class="dropdown-item" href="#">EUR (€)</a></li>
-                        <li><a class="dropdown-item" href="#">GBP (£)</a></li>
-                        <li><a class="dropdown-item" href="#">AED (د.إ)</a></li>
-                        <li><a class="dropdown-item" href="#">PKR (Rs)</a></li>
-                        <li><a class="dropdown-item" href="#">CNY (¥)</a></li>
-                    </ul>
-                </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" role="button"
-                        data-bs-toggle="dropdown">
-                        Ship to <img src="assets/Layout1/Image/flags/DE@2x.png" width="20" alt="flag">
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
+
+                <div class="d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle fw-medium p-0" href="#" data-bs-toggle="dropdown" style="font-size: 14px;">
+                            English, USD
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                            <li><a class="dropdown-item" href="#">USD ($)</a></li>
+                            <li><a class="dropdown-item" href="#">EUR (€)</a></li>
+                            <li><a class="dropdown-item" href="#">GBP (£)</a></li>
+                            <li><a class="dropdown-item" href="#">AED (د.إ)</a></li>
+                            <li><a class="dropdown-item" href="#">PKR (Rs)</a></li>
+                            <li><a class="dropdown-item" href="#">CNY (¥)</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 p-0" href="#" data-bs-toggle="dropdown" style="font-size: 14px;">
+                            Ship to <img src="assets/Layout1/Image/flags/DE@2x.png" width="20" alt="flag">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
                         <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/AE@2x.png" width="20"
                                     class="me-2">United Arab Emirates (UAE)</a></li>
                         <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/CN@2x.png" width="20"
@@ -110,12 +115,13 @@
                                     class="me-2">Russia</a></li>
                         <li><a class="dropdown-item" href="#"><img src="assets/Layout1/Image/flags/US@2x.png" width="20"
                                     class="me-2">USA</a></li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        </nav>
-    </header>
+    </nav>
+</header>
 
 <div class="bg-light py-2 mb-4 border-bottom">
     <div class="container">
@@ -137,12 +143,12 @@
             <h6 class="fw-bold mb-0" style="font-size: 16px;">Category</h6>
             <i class="fa fa-chevron-up text-muted small"></i>
         </div>
-        <ul class="list-unstyled text-muted" style="font-size: 14px;">
-            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Mobile accessory</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Electronics</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Smartphones</a></li>
-            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Modern tech</a></li>
-            <li class="mt-2"><a href="#" class="text-primary text-decoration-none">See all</a></li>
+        <ul class="list-unstyled">
+          <li><a href="#" class="filter-link text-decoration-none text-muted" data-category="all">All Category</a></li>
+          <li><a href="#" class="filter-link text-decoration-none text-muted" data-category="Electronics">Electronics</a></li>
+          <li><a href="#" class="filter-link text-decoration-none text-muted" data-category="Smartphones">Smartphones</a></li>
+          <li><a href="#" class="filter-link text-decoration-none text-muted" data-category="Modern tech">Modern tech</a></li>
+          <li><a href="#" class="filter-link text-decoration-none text-muted" data-category="Clothes">Clothes</a></li>
         </ul>
     </div>
 
@@ -186,219 +192,25 @@
     </div>
 </aside>
 
-        <main class="col-md-9 px-3">
-        <div class="d-flex justify-content-between align-items-center p-3 border rounded mb-3 bg-white shadow-sm">
-    <span class="text-dark">12,973 items in <b class="text-secondary">Mobile accessory</b></span>
-    <div class="d-flex align-items-center gap-2">
-        <div class="form-check me-2 mb-0">
-            <input class="form-check-input shadow-none" type="checkbox" id="showSelect">
-            <label class="form-check-label small" for="showSelect" style="cursor:pointer;">Show ready to ship</label>
+<main class="col-md-9 px-3">
+    <div class="d-flex justify-content-between align-items-center p-3 border rounded mb-3 bg-white shadow-sm">
+        <span id="item-count" class="text-dark">Loading items...</span>
         </div>
-        <select class="form-select form-select-sm w-auto shadow-none">
-            <option>Featured</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
-        </select>
-        <div class="btn-group">
-            <button class="btn btn-white border btn-sm active shadow-none"><i class="fa fa-bars"></i></button>
-            <button class="btn btn-white border btn-sm shadow-none"><i class="fa fa-th"></i></button>
-        </div>
-    </div>
-</div>
 
-            <div class="card mb-3 border shadow-sm">
-                <div class="row g-0 align-items-center">
-        <div class="col-md-3 text-center p-3">
-            <a href="detail.html">
-                <img src="assets/Image/tech/image 33.png" class="img-fluid rounded" style="max-height: 160px;">
-            </a>
+    <div id="product-list-container">
         </div>
-        
-        <div class="col-md-7">
-            <div class="card-body py-2">
-                <h6 class="card-title fw-bold mb-1">
-                    <a href="detail.html" class="text-decoration-none text-dark">Canon Camera EOS 2000D Black 15x zoom</a>
-                </h6>
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <h5 class="fw-bold mb-0 text-dark">$998.00</h5>
-                    <span class="text-muted small text-decoration-line-through">$1128.00</span>
-                </div>
-                
-                <div class="text-warning small mb-2">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                    <i class="fa-regular fa-star text-muted"></i>
-                    <span class="text-muted ms-2">7.5 · 154 orders</span>
-                    <span class="text-success ms-3 fw-medium"><i class="fa fa-check"></i> Free Shipping</span>
-                </div>
-                
-                <p class="text-muted small mb-2">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-                <a href="detail.html" class="text-primary text-decoration-none fw-bold small">View details</a>
-            </div>
-        </div>
-        
-        <div class="col-md-2 text-center text-md-end pe-md-4">
-            <button class="btn btn-outline-primary shadow-sm border" style="border-radius: 8px;">
-                <i class="fa-regular fa-heart"></i>
-            </button>
-        </div>
-    </div>
 
-    <div class="card mb-3 border shadow-sm">
-    <div class="row g-0 align-items-center">
-        <div class="col-md-3 text-center p-3">
-            <a href="detail.html">
-                <img src="assets/Image/tech/image 23.png" class="img-fluid rounded" style="max-height: 160px;">
-            </a>
-        </div>
-        <div class="col-md-7">
-            <div class="card-body py-2">
-                <h6 class="card-title fw-bold mb-1">
-                    <a href="detail.html" class="text-decoration-none text-dark">Canon Camera EOS 2000D Black 15x zoom</a>
-                </h6>
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <h5 class="fw-bold mb-0 text-dark">$998.00</h5>
-                    <span class="text-muted small text-decoration-line-through">$1128.00</span>
-                </div>
-                <div class="text-warning small mb-2">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                    <i class="fa-regular fa-star text-muted"></i>
-                    <span class="text-muted ms-2">7.5 · 154 orders</span>
-                    <span class="text-success ms-3 fw-medium"><i class="fa fa-check"></i> Free Shipping</span>
-                </div>
-                <p class="text-muted small mb-2">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-                <a href="detail.html" class="text-primary text-decoration-none fw-bold small">View details</a>
-            </div>
-        </div>
-        <div class="col-md-2 text-center text-md-end pe-md-4">
-            <button class="btn btn-outline-primary shadow-sm border" style="border-radius: 8px;">
-                <i class="fa-regular fa-heart"></i>
-            </button>
-        </div>
-    </div>
-</div>
+    <nav class="d-flex justify-content-end mt-4">
+        <ul class="pagination pagination-sm">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+</main>        
 
-<div class="card mb-3 border shadow-sm">
-    <div class="row g-0 align-items-center">
-        <div class="col-md-3 text-center p-3">
-            <a href="detail.html">
-                <img src="assets/Image/tech/image 32.png" class="img-fluid rounded" style="max-height: 160px;">
-            </a>
-        </div>
-        <div class="col-md-7">
-            <div class="card-body py-2">
-                <h6 class="card-title fw-bold mb-1">
-                    <a href="detail.html" class="text-decoration-none text-dark">Canon Camera EOS 2000D Black 15x zoom</a>
-                </h6>
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <h5 class="fw-bold mb-0 text-dark">$998.00</h5>
-                    <span class="text-muted small text-decoration-line-through">$1128.00</span>
-                </div>
-                <div class="text-warning small mb-2">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                    <i class="fa-regular fa-star text-muted"></i>
-                    <span class="text-muted ms-2">7.5 · 154 orders</span>
-                    <span class="text-success ms-3 fw-medium"><i class="fa fa-check"></i> Free Shipping</span>
-                </div>
-                <p class="text-muted small mb-2">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-                <a href="detail.html" class="text-primary text-decoration-none fw-bold small">View details</a>
-            </div>
-        </div>
-        <div class="col-md-2 text-center text-md-end pe-md-4">
-            <button class="btn btn-outline-primary shadow-sm border" style="border-radius: 8px;">
-                <i class="fa-regular fa-heart"></i>
-            </button>
-        </div>
-    </div>
-</div>
-
-<div class="card mb-3 border shadow-sm">
-    <div class="row g-0 align-items-center">
-        <div class="col-md-3 text-center p-3">
-            <a href="detail.html">
-                <img src="assets/Image/tech/image 34.png" class="img-fluid rounded" style="max-height: 160px;">
-            </a>
-        </div>
-        <div class="col-md-7">
-            <div class="card-body py-2">
-                <h6 class="card-title fw-bold mb-1">
-                    <a href="detail.html" class="text-decoration-none text-dark">Canon Camera EOS 2000D Black 15x zoom</a>
-                </h6>
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <h5 class="fw-bold mb-0 text-dark">$998.00</h5>
-                    <span class="text-muted small text-decoration-line-through">$1128.00</span>
-                </div>
-                <div class="text-warning small mb-2">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                    <i class="fa-regular fa-star text-muted"></i>
-                    <span class="text-muted ms-2">7.5 · 154 orders</span>
-                    <span class="text-success ms-3 fw-medium"><i class="fa fa-check"></i> Free Shipping</span>
-                </div>
-                <p class="text-muted small mb-2">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-                <a href="detail.html" class="text-primary text-decoration-none fw-bold small">View details</a>
-            </div>
-        </div>
-        <div class="col-md-2 text-center text-md-end pe-md-4">
-            <button class="btn btn-outline-primary shadow-sm border" style="border-radius: 8px;">
-                <i class="fa-regular fa-heart"></i>
-            </button>
-        </div>
-    </div>
-</div>
-
-<div class="card mb-3 border shadow-sm">
-    <div class="row g-0 align-items-center">
-        <div class="col-md-3 text-center p-3">
-            <a href="detail.html">
-                <img src="assets/Image/tech/8.png" class="img-fluid rounded" style="max-height: 160px;">
-            </a>
-        </div>
-        <div class="col-md-7">
-            <div class="card-body py-2">
-                <h6 class="card-title fw-bold mb-1">
-                    <a href="detail.html" class="text-decoration-none text-dark">Canon Camera EOS 2000D Black 15x zoom</a>
-                </h6>
-                <div class="d-flex align-items-center gap-2 mb-2">
-                    <h5 class="fw-bold mb-0 text-dark">$998.00</h5>
-                    <span class="text-muted small text-decoration-line-through">$1128.00</span>
-                </div>
-                <div class="text-warning small mb-2">
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                    <i class="fa-regular fa-star text-muted"></i>
-                    <span class="text-muted ms-2">7.5 · 154 orders</span>
-                    <span class="text-success ms-3 fw-medium"><i class="fa fa-check"></i> Free Shipping</span>
-                </div>
-                <p class="text-muted small mb-2">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                </p>
-                <a href="detail.html" class="text-primary text-decoration-none fw-bold small">View details</a>
-            </div>
-        </div>
-        <div class="col-md-2 text-center text-md-end pe-md-4">
-            <button class="btn btn-outline-primary shadow-sm border" style="border-radius: 8px;">
-                <i class="fa-regular fa-heart"></i>
-            </button>
-        </div>
-    </div>
-</div>
-            </div>
-            <nav class="d-flex justify-content-end mt-4">
-            <ul class="pagination pagination-sm">
-                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-        </nav>
-            </main>
     </div>
 </div>
 
