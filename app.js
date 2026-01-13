@@ -133,7 +133,6 @@ function displayProducts(productsList) {
         itemCount.innerHTML = `${productsList.length} items found`;
     }
 
-    // --- YE NAYA HISSA HAI ---
     if (productsList.length === 0) {
         container.innerHTML = `
             <div class="text-center py-5 w-100 border rounded bg-light">
@@ -147,8 +146,7 @@ function displayProducts(productsList) {
         `;
         return; 
     }
-    // -------------------------
-
+    
     productsList.forEach(product => {
         container.innerHTML += `
             <div class="card mb-3 border shadow-sm p-2">
