@@ -170,3 +170,22 @@
         margin-bottom: 20px;
     }
 }
+ 
+@media (max-width: 768px) {
+    #product-list-container {
+        padding-left: 15px;  
+        padding-right: 15px;
+    }
+
+    .card {
+        margin-bottom: 15px; 
+    }
+
+    .card-body {
+        padding: 15px !important;
+    }
+
+    .search-container {
+        margin: 10px 15px;
+    }
+}

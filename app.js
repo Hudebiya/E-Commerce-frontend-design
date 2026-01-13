@@ -125,16 +125,29 @@ function displayProducts(productsList) {
     const container = document.getElementById('product-list-container');
     const itemCount = document.getElementById('item-count');
 
-    if (!container) {
-        console.error("HTML mein 'product-list-container' nahi mila!");
-        return;
-    }
+    if (!container) return;
 
     container.innerHTML = ""; 
 
     if (itemCount) {
         itemCount.innerHTML = `${productsList.length} items found`;
     }
+
+    // --- YE NAYA HISSA HAI ---
+    if (productsList.length === 0) {
+        container.innerHTML = `
+            <div class="text-center py-5 w-100 border rounded bg-light">
+                <i class="fa-solid fa-magnifying-glass mb-3 text-muted" style="font-size: 40px;"></i>
+                <h3 class="text-muted">No results found!</h3>
+                <p>Humain aapki search ke mutabiq kuch nahi mila.</p>
+                <button onclick="displayProducts(products)" class="btn btn-primary btn-sm mt-2">
+                    Show All Products
+                </button>
+            </div>
+        `;
+        return; 
+    }
+    // -------------------------
 
     productsList.forEach(product => {
         container.innerHTML += `
